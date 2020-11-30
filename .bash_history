@@ -152,3 +152,82 @@ eclient
 ./eclient 127.0.0.1 9190
 ./eclient 127.0.0.1 9190
 exit
+ls -al
+mkdir ch10
+ls
+cd ch8
+ls
+cd ..
+cp file_server.c ch10
+cp hello_server.c ch10
+cp hello_client.c ch10
+cd ch10
+ls
+nvim hello_server.c 
+ls
+rm '-o echo_mpserv.c'
+rm ./'-o echo_mpserv.c'
+ls
+rm hello_server.c
+nvim hello_client.c 
+nvim hello_client.c 
+rm hello_client.c 
+ls
+nvim echo_mpserv.c 
+tmux
+ls
+cd ..
+git add .
+git status
+git commit -m "Added Ch10"
+git push
+git push StudyOfSocket
+git push StudyOfSocket master
+exit
+ls
+muxserver
+cd ..
+ls
+ch10
+cd ch8
+ls
+cd ..
+cd ch10
+ls
+cp echo_client.c ..
+ls 
+cd ..
+ls
+cp echo_client.c ch12
+cd ch12
+ls
+exit
+exit
+exit
+ls
+mkdir ch12
+ch10
+cd ch10
+nvim echo_mpserv.c 
+ls
+cp echo_muxserv.c ..
+rm echo_muxserv.c 
+ls
+cd ..
+ls
+cp echo_muxserv.c ch12
+rm echo_muxserv.c 
+ls
+cd ch12
+ls
+nvim echo_muxserv.c 
+ls
+clang echo_muxserv.c -o muxserver
+nvim echo_muxserv.c 
+clang echo_muxserv.c -o muxserver
+nvim echo_muxserv.c 
+clang echo_muxserv.c -o muxserver
+nvim echo_muxserv.c 
+clang echo_muxserv.c -o muxserver
+tmux
+exit
