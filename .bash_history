@@ -114,3 +114,41 @@ clang file_client.c -o fclient
 ls
 tmux
 exit
+pwd
+pkg install git
+pwd
+git init
+pwd
+ls
+ls -al
+git add .
+git commit -m "Back up"
+git config --global user.email "herrtane@gmail.com"
+git config --global user.name "herrtane"
+git commit -m "Back up"
+git push
+git remote add StudyOfSocket https://github.com/herrtane/StudyOfSocket.git
+git push StudyOfSocket
+git push StudyOfSocket master
+git status
+ls -al
+exit
+clang echo_mpserv.c -o mpserv
+nvim echo_mpserv.c 
+mpserv
+ls
+clang echo_client.c -o eclient
+nvim echo_client.c 
+clang echo_client.c -o eclient
+eclient
+./eclient 127.0.0.1 9190
+nvim echo_mpserv.c 
+clang echo_mpserv.c -o mpserv
+./mpserv 9190
+exit
+./eclient 127.0.0.1 9190
+exit
+eclient
+./eclient 127.0.0.1 9190
+./eclient 127.0.0.1 9190
+exit
