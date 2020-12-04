@@ -231,3 +231,35 @@ nvim echo_muxserv.c
 clang echo_muxserv.c -o muxserver
 tmux
 exit
+./eclient 127.0.0.1 9190
+exit
+clang echo_client.c -o eclient
+./eclient 127.0.0.1 9190
+./eclient 127.0.0.1 9190
+./eclient 127.0.0.1 9190
+exit
+ls
+cd ch12
+ls
+./muxserver 9190
+nvim echo_muxserv.c 
+exit
+ls
+git add .
+git status
+git commit -m "Adding ch12"
+git push StudyOfSocket master
+tmux
+exit
+./cclient 127.0.0.1 9190 Choi
+nvim chat_client.c 
+clang chat_client.c -D_REENTRANT -o cclient -lpthread
+./cclient 127.0.0.1 9190 Lee
+exit
+./cclient 127.0.0.1 9190 Lee
+./cclient 127.0.0.1 9190 Choi
+exit
+ls
+./cserver 9190
+./csever 9190
+exit
