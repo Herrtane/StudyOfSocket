@@ -263,3 +263,110 @@ ls
 ./cserver 9190
 ./csever 9190
 exit
+ls
+git pull StudyOfSocket master
+ls
+cd ch17
+ls
+cd ..
+cd ch12
+ls
+cd ..
+cd ch8
+ls
+cd ..
+cd ch10
+ls
+cd ..
+cp hello_server.c ch18
+ls
+rm ch18
+ls
+mkdir ch18
+ls
+cp hello_server.c ch18
+ls
+cp echo_client.c cd18
+cd ch18
+ls
+cd ..
+ls
+rm cd18
+cp echo_client.c ch18
+ls
+cd ch18
+ls
+nvim hello_server.c 
+ls
+rm hello_server.c 
+ls
+nvim chat_server.c 
+nvim echo_client.c
+ls
+rm echo_client.c 
+ls
+clang chat_server.c -D_REENTRANT -o csever -lpthread
+clang chat_client.c -D_REENTRANT -o cclient -lpthread
+tmux
+cd ..
+ls
+git add .
+git commit -m "Adding chat program"
+git status
+git push StudyOfSocket master
+exit
+ls
+mkdir other
+cd other/
+nvim printskill.c
+clang printskill.c -o printskill
+./printskill 
+clear
+nvim printskill.c
+clang printskill.c -o printskill
+./printskill 
+nvim printskill.c
+clang printskill.c -o printskill
+./printskill 
+nvim printskill.c
+clang printskill.c -o printskill
+nvim printskill.c
+nvim printskill.c
+clang printskill.c -o printskill
+./printskill 
+nvim printskill.c
+git add .
+git commit -m "Adding other"
+git push StudyOfSocket master
+exit
+ls
+cd ch18
+ls
+nvim chat_client.c 
+exit
+ls
+mkidr practice
+mkdir practice
+cd practice/
+nvim p_server.c
+ls
+exit
+exit
+clang p_client.c -o p_client
+./p_client 127.0.0.1 9190
+nvim p_client.c
+clang p_client.c -o p_client
+ls
+./p_client 127.0.0.1 9190
+exit
+ls
+./p_server 9190
+./p_server.c 9190
+nvim p_server.c 
+clang p_server.c -o p_server
+nvim p_server.c 
+clang p_server.c -o p_server
+nvim p_server.c 
+clang p_server.c -o p_server
+./p_server 9190
+exit
